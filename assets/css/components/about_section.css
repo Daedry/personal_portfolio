@@ -110,6 +110,7 @@ about section
 
 .about-section .tab-content.active{
     display: block;
+    animation: fadeInTop 0.5s ease;
 }
 
 .about-section .skills{
