@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 
 /* colors */
-@import url("./components/colors.css");
+@import url("./colors.css");
 
 /* global style */
-@import url("./components/global_style.css");
+@import url("./global_style.css");
 
 /* header */
 @import url("./components/header.css");
@@ -13,4 +13,9 @@
 /* navigation menu */
 @import url("./components/nav_menu.css");
 
+/* home_section */
 @import url("./components/home_section.css");
+
+/* about_section */
+
+@import url("./components/about_section.css");
