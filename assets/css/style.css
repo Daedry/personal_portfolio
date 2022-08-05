@@ -8,14 +8,17 @@
 @import url("./global/global_style.css");
 
 /* header */
-@import url("./components/header.css");
+@import url("./components/header_section.css");
 
 /* navigation menu */
-@import url("./components/nav_menu.css");
+@import url("./components/nav_section.css");
 
 /* home_section */
 @import url("./components/home_section.css");
 
 /* about_section */
 @import url("./components/about_section.css");
+
+/* services_section */
+@import url("./components/services_section.css");
 
