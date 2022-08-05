@@ -46,6 +46,15 @@ portfolio section
   padding: 15px;
 }
 
+.portfolio-section .portfolio-item.hide {
+  display: none;
+}
+
+.portfolio-section .portfolio-item.show {
+    display: block;
+    animation: fadeInTop 0.5s ease;
+  }
+
 .portfolio-section .portfolio-item-inner {
   padding: 15px;
   border-radius: 5px;
@@ -61,8 +70,8 @@ portfolio section
   transition: all 0.37s ease;
 }
 
-.portfolio-section .portfolio-item-inner:hover .portfolio-item-img img{
-    transform: translateY(-25px);
+.portfolio-section .portfolio-item-inner:hover .portfolio-item-img img {
+  transform: translateY(-25px);
 }
 
 .portfolio-section .portfolio-item-img .view-project {
