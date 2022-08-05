@@ -72,6 +72,7 @@ portfolio section
 
 .portfolio-section .portfolio-item-inner:hover .portfolio-item-img img {
   transform: translateY(-25px);
+  cursor: pointer;
 }
 
 .portfolio-section .portfolio-item-img .view-project {
@@ -91,6 +92,8 @@ portfolio section
 .portfolio-section .portfolio-item-inner:hover .view-project {
   transform: translateY(0px);
   opacity: 1;
+  cursor: pointer;
+  z-index: 100;
 }
 
 .portfolio-section .portfolio-item-details {
