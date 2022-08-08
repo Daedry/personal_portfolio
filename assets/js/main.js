@@ -29,7 +29,7 @@
 /*----------------------- stop scrolling-y -----------------------*/
 
 function bodyScrollingToggle() {
-  document.body.classList.toggle("stop-scrolling");
+  document.body.classList.toggle("hidden-scrolling");
 }
 
 /*----------------------- portfolio filter and popup -----------------------*/
