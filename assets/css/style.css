@@ -7,10 +7,10 @@
 /* global style */
 @import url("./global/global_style.css");
 
-/* header */
+/* header_section */
 @import url("./components/header_section.css");
 
-/* navigation menu */
+/* nav_section */
 @import url("./components/nav_section.css");
 
 /* home_section */
@@ -27,3 +27,6 @@
 
 /* popup_section */
 @import url("./components/popup_section.css");
+
+/* testimonial_section */
+@import url("./components/testimonial_section.css");
