@@ -75,6 +75,8 @@
   });
 })();
 
+
+
 /*----------------------- about section tabs -----------------------*/
 
 (() => {
@@ -103,11 +105,15 @@
   });
 })();
 
+
+
 /*----------------------- stop scrolling-y -----------------------*/
 
 function bodyScrollingToggle() {
   document.body.classList.toggle("hidden-scrolling");
 }
+
+
 
 /*----------------------- portfolio filter and popup -----------------------*/
 
@@ -304,6 +310,8 @@ function bodyScrollingToggle() {
   }
 })();
 
+
+
 /*----------------------- testimonial slider -----------------------*/
 
 (() => {
@@ -362,6 +370,8 @@ function bodyScrollingToggle() {
   slider();
 })();
 
+
+
 /*----------------------- hide all sections except active -----------------------*/
 
 (() => {
@@ -372,3 +382,22 @@ function bodyScrollingToggle() {
     }
   });
 })();
+
+
+
+/*----------------------- theme ligth and darck mode -----------------------*/
+const dayNigth = document.querySelector(".day-night");
+
+dayNigth.addEventListener("click", () => {
+  dayNigth.querySelector("i").classList.toggle("fa-moon");
+  dayNigth.querySelector("i").classList.toggle("fa-sun");
+  document.body.classList.toggle("dark");
+});
+
+window.addEventListener("load", () => {
+  if(document.body.classList.contains("dark")){
+    dayNigth.querySelector("i").classList.add("fa-sun");
+  } else {
+    dayNigth.querySelector("i").classList.add("fa-moon");
+  }
+});
