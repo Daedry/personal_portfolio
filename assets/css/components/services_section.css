@@ -33,7 +33,12 @@ service section
     margin: 0 auto 30px;
     position: relative;
     transition: all .37s ease;
-    
+
+    color: var(--text-black-600);
+}
+
+.service-section .service-item-inner p{
+    color: var(--text-black-600);
 }
 
 .service-section .service-item-inner .icon:after{
