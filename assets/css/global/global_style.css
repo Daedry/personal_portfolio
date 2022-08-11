@@ -255,3 +255,11 @@ img {
     transform: translateY(0px);
   }
 }
+
+
+
+
+
+.section.hide{
+  display:none;
+}
