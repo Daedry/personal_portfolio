@@ -2,8 +2,8 @@
 
 (() => {
   const hamburgerBtn = document.querySelector(".hamburger-btn"),
-  navMenu = document.querySelector(".nav-menu"),
-  closeNavBtn = navMenu.querySelector(".close-nav-menu");
+    navMenu = document.querySelector(".nav-menu"),
+    closeNavBtn = navMenu.querySelector(".close-nav-menu");
 
   hamburgerBtn.addEventListener("click", showNavMenu);
   closeNavBtn.addEventListener("click", hideNavMenu);
@@ -45,11 +45,15 @@
         document.querySelector(hash).classList.remove("hide");
 
         // deactivate existing active navigation menu 'link-item'
-        navMenu.querySelector(".active").classList.add("outer-shadow", "hover-in-shadow");
-        navMenu.querySelector(".active").classList.remove("active", "inner-shadow");
+        navMenu
+          .querySelector(".active")
+          .classList.add("outer-shadow", "hover-in-shadow");
+        navMenu
+          .querySelector(".active")
+          .classList.remove("active", "inner-shadow");
 
         //if clicked 'link-item' is contained withing the navigation menu
-        if(navMenu.classList.contains("open")){
+        if (navMenu.classList.contains("open")) {
           // activate new navigation menu 'link-item'
           event.target.classList.add("active", "inner-shadow");
           event.target.classList.remove("outer-shadow", "hover-in-shadow");
@@ -59,10 +63,10 @@
         } else {
           let navItems = navMenu.querySelectorAll(".link-item");
           navItems.forEach((item) => {
-            if(hash === item.hash){
+            if (hash === item.hash) {
               // activate new navigation menu 'link-item'
-            item.classList.add("active", "inner-shadow");
-            item.classList.remove("outer-shadow", "hover-in-shadow");
+              item.classList.add("active", "inner-shadow");
+              item.classList.remove("outer-shadow", "hover-in-shadow");
             }
           });
           fadeOutEffect();
@@ -74,8 +78,6 @@
     }
   });
 })();
-
-
 
 /*----------------------- about section tabs -----------------------*/
 
@@ -105,15 +107,11 @@
   });
 })();
 
-
-
 /*----------------------- stop scrolling-y -----------------------*/
 
 function bodyScrollingToggle() {
   document.body.classList.toggle("hidden-scrolling");
 }
-
-
 
 /*----------------------- portfolio filter and popup -----------------------*/
 
@@ -310,8 +308,6 @@ function bodyScrollingToggle() {
   }
 })();
 
-
-
 /*----------------------- testimonial slider -----------------------*/
 
 (() => {
@@ -370,8 +366,6 @@ function bodyScrollingToggle() {
   slider();
 })();
 
-
-
 /*----------------------- hide all sections except active -----------------------*/
 
 (() => {
@@ -383,21 +377,40 @@ function bodyScrollingToggle() {
   });
 })();
 
-
-
 /*----------------------- theme ligth and darck mode -----------------------*/
+
 const dayNigth = document.querySelector(".day-night");
 
 dayNigth.addEventListener("click", () => {
-  dayNigth.querySelector("i").classList.toggle("fa-moon");
-  dayNigth.querySelector("i").classList.toggle("fa-sun");
   document.body.classList.toggle("dark");
+  if(document.body.classList.contains("dark")){
+    localStorage.setItem("theme", "dark");
+  }else {
+    localStorage.setItem("theme", "light");
+  }
+  updateIcon();
 });
 
-window.addEventListener("load", () => {
-  if(document.body.classList.contains("dark")){
+function themeMode() {
+  // checking if theme key exists
+  if(localStorage.getItem("theme") !== null){
+    if(localStorage.getItem("theme") === "light"){
+      document.body.classList.remove("dark");
+    } else {
+      document.body.classList.add("dark");
+    }
+  }
+  updateIcon();
+}
+themeMode();
+
+function updateIcon() {
+  // dayNigth.querySelector("i").classList.add("fa-sun");
+  if (document.body.classList.contains("dark")) {
+    dayNigth.querySelector("i").classList.remove("fa-moon");
     dayNigth.querySelector("i").classList.add("fa-sun");
   } else {
+    dayNigth.querySelector("i").classList.remove("fa-sun");
     dayNigth.querySelector("i").classList.add("fa-moon");
   }
-});
+}

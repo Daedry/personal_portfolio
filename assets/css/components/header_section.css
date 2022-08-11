@@ -39,7 +39,7 @@ HEADER
 }
 .header .hamburger-btn span {
   display: block;
-  height: 2px;
+  height: .1rem;
   width: 16px;
   background: var(--bg-black-900);
   position: relative;
