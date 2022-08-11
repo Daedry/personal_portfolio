@@ -33,7 +33,7 @@ HOME SECTION
 .home-section .home-text h1 {
   font-size: 20px;
   font-weight: 500;
-  color: var(--text-black-700);
+  color: var(--text-black-600);
   margin: 0;
   text-transform: capitalize;
 }
