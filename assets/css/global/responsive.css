@@ -1,0 +1,130 @@
+/* --------
+RESPNSIVE CSS
+-----------*/
+
+@media (max-width: 991px) {
+  .portfolio-section .portfolio-item,
+  .service-section .service-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-section .w-50,
+  .contact-section .contact-item,
+  .portfolio-popup .description,
+  .portfolio-popup .info,
+  .portfolio-popup .portfolio-item,
+  .service-section .service-item,
+  .about-section .skills .skill-item,
+  .about-section .about-info,
+  .about-section .about-img,
+  .home-section .home-text,
+  .home-section .home-img {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .contact-section .submit-btn{
+    order: 2;
+  }
+
+  .portfolio-popup .pp-main {
+    min-height: 74vh;
+    position: relative;
+  }
+
+  .portfolio-popup .pp-prev,
+  .portfolio-popup .pp-next {
+    position: absolute;
+  }
+
+  .portfolio-popup .pp-prev{
+    bottom: 0;
+    left: -2.75rem;
+  }
+
+  .portfolio-popup .pp-next {
+    bottom: 0;
+    right: -2.75rem;
+  }
+
+  .home-section .home-text {
+    text-align: center;
+    order: 2;
+  }
+
+  .home-section .full-screen {
+    padding: 100px 0;
+  }
+
+  .home-section .home-img .img-box {
+    margin-bottom: 40px;
+    max-width: 350px;
+  }
+
+  .effect-3 {
+    margin-left: -60px;
+  }
+
+  .effect-4 {
+    left: 15%;
+  }
+
+  .effect-5 {
+    right: 4%;
+  }
+
+  .about-section .about-img {
+    padding-bottom: 30px;
+  }
+
+  .about-section .timeline .timeline-item:nth-child(odd) {
+    padding: 0 15px 0 75px;
+    text-align: center;
+  }
+
+  .about-section .timeline .timeline-item:nth-child(even) {
+    padding-left: 75px;
+  }
+
+  .about-section .timeline:before {
+    left: 35px;
+  }
+
+  .about-section .timeline .timeline-item:nth-child(odd) .icon {
+    right: auto;
+    left: -60px;
+  }
+
+  .about-section .timeline .timeline-item:nth-child(even) .icon {
+    left: -60px;
+  }
+
+  .about-section .timeline .timeline-item {
+    margin-bottom: 40px;
+  }
+
+  .about-section .timeline .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-section
+    .timeline
+    .timeline-item:nth-child(odd)
+    .timeline-item-inner:before {
+    left: -30px;
+    right: auto;
+  }
+}
+
+@media (max-width: 574px) {
+  .home-section .home-img .IMG-BOX {
+    max-width: 270px;
+  }
+
+  .home-section .home-text {
+    font-size: 40px;
+  }
+}
