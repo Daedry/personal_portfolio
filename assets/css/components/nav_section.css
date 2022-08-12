@@ -105,3 +105,8 @@ navigation menu
 .nav-menu ul li a:after {
   border-radius: 30px;
 }
+
+.nav-menu ul li a.disabled{
+  cursor: default;
+  color: var(--bg-black-300);
+}

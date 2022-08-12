@@ -314,3 +314,7 @@ img {
 .section.hide{
   display:none;
 }
+
+.d-none{
+  display:none;
+}
