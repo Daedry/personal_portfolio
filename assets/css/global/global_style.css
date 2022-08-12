@@ -3,6 +3,24 @@ GLOBAL STYLE
 -----------*/
 /* define custom css variables */
 
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 :root {
   --skin-color: #fb839e;
   --bg-opacity: rgba(255, 255, 255, 0.5);
@@ -49,6 +67,7 @@ body.hidden-scrolling{
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -126,7 +145,7 @@ img {
 
 .btn-1 {
   padding: 10px 25px;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
   color: var(--skin-color);
   background-color: transparent;
@@ -136,6 +155,8 @@ img {
   transition: all 0.33s ease;
   display: inline-block;
   border:none;
+  font-family: 'Gochi Hand', cursive;
+
 }
 
 .btn-1:after {
@@ -260,15 +281,18 @@ img {
 }
 
 .section-title h2{
+  font-family: 'Annie Use Your Telescope', cursive;
   display: inline-block;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   color: var(--text-black-900);
   text-transform: uppercase;
   margin: 0;
+  line-height: 1.75rem;
 }
 
 .section-title h2:before{
+  font-family: 'Give You Glory', cursive;
   content: attr(data-heading);
   display: block;
   font-size: 16px;
@@ -287,8 +311,6 @@ img {
   }
 }
 
-
 .section.hide{
   display:none;
 }
-

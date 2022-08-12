@@ -18,20 +18,25 @@ HOME SECTION
 }
 
 .home-section .home-text p {
-  color: var(--text-black-300);
-  font-size: 19px;
+  font-family: 'Nothing You Could Do', cursive ;
+  color: var(--text-black-600);
+  font-size: 26px;
   text-transform: capitalize;
-  margin: 0;
+  margin: 0 0 0 20px;
+  font-weight: 500;
 }
 
 .home-section .home-text h2 {
-  font-size: 55px;
-  font-weight: 700;
+  font-family: 'Splash', cursive;
+  font-size: 60px;
   color: var(--text-black-900);
+  font-weight: 500;
 }
 
 .home-section .home-text h1 {
-  font-size: 20px;
+  /* font-family: 'Gochi Hand', cursive; */
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
   font-weight: 500;
   color: var(--text-black-600);
   margin: 0;

@@ -88,6 +88,7 @@ navigation menu
 }
 
 .nav-menu ul li a {
+  font-family: 'Annie Use Your Telescope', cursive;
   display: inline-block;
   font-size: 28px;
   font-weight: 600;

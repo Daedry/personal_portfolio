@@ -12,6 +12,7 @@ portfolio section
 }
 
 .portfolio-section .portfolio-filter {
+  
   padding: 0 15px;
   flex: 0 0 100%;
   max-width: 100%;
@@ -20,6 +21,7 @@ portfolio section
 }
 
 .portfolio-section .filter-item {
+  font-family: 'Gochi Hand', cursive;
   display: inline-block;
   margin: 0 5px 10px;
   padding: 5px 10px;
@@ -28,7 +30,7 @@ portfolio section
   font-weight: 500;
   color: var(--text-black-600);
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 20px;
   transition: all 0.37s ease-in-out;
 }
 
