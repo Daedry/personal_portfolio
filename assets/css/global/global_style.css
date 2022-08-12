@@ -265,7 +265,6 @@ img {
   border-radius: 50%;
   overflow: hidden;
   animation: spin 10s linear infinite;
-
 }
 
 .effect-5 div {
@@ -273,7 +272,6 @@ img {
   width: 2px;
   background-color: #4dd0e1;
   animation: lineWidth 3.5s linear alternate-reverse infinite;
-
 }
 
 @keyframes lineWidth {
@@ -288,7 +286,7 @@ img {
   40% {
     width: 1px;
   }
- 
+
   60% {
     width: 3px;
   }
@@ -339,6 +337,10 @@ img {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+.ml-2 {
+  margin-left: 2rem !important;
 }
 
 .section.hide {
