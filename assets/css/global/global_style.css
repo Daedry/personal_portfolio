@@ -3,23 +3,23 @@ GLOBAL STYLE
 -----------*/
 /* define custom css variables */
 
-@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Splash&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 :root {
   --skin-color: #fb839e;
@@ -37,7 +37,7 @@ GLOBAL STYLE
   --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
 }
 
-body.dark{
+body.dark {
   --bg-black-900: #fff;
   --bg-black-100: #353535;
   --bg-black-50: #2b2c2f;
@@ -51,7 +51,6 @@ body.dark{
   --inner-shadow-0: inset 0 0 0 #222327, inset 0 0 0 #363636;
 }
 
-
 body {
   font-size: 16px;
   line-height: 1.5;
@@ -59,7 +58,7 @@ body {
   background-color: var(--bg-black-50);
 }
 
-body.hidden-scrolling{
+body.hidden-scrolling {
   overflow-y: hidden;
 }
 
@@ -154,9 +153,8 @@ img {
   border-radius: 30px;
   transition: all 0.33s ease;
   display: inline-block;
-  border:none;
-  font-family: 'Gochi Hand', cursive;
-
+  border: none;
+  font-family: "Gochi Hand", cursive;
 }
 
 .btn-1:after {
@@ -210,7 +208,9 @@ img {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(25px);
+    transform: translateY(50px);
+    background: #dfc728;
+    height: 5px;
   }
   100% {
     transform: translateY(0);
@@ -255,7 +255,7 @@ img {
   opacity: 0.5;
 }
 
-.effect-5{
+.effect-5 {
   height: 50px;
   width: 50px;
   right: 230px;
@@ -264,15 +264,45 @@ img {
   justify-content: space-between;
   border-radius: 50%;
   overflow: hidden;
-  animation: spin 10s reverse infinite;
+  animation: spin 10s linear infinite;
+
 }
 
-.effect-5 div{
+.effect-5 div {
+  overflow: hidden;
   width: 2px;
   background-color: #4dd0e1;
+  animation: lineWidth 3.5s linear alternate-reverse infinite;
+
 }
 
-.section-title{
+@keyframes lineWidth {
+  0% {
+    width: 2px;
+  }
+
+  20% {
+    width: 4px;
+  }
+
+  40% {
+    width: 1px;
+  }
+ 
+  60% {
+    width: 3px;
+  }
+
+  80% {
+    width: 2px;
+  }
+
+  100% {
+    width: 1px;
+  }
+}
+
+.section-title {
   padding: 0 15px;
   flex: 0 0 100%;
   max-width: 100%;
@@ -280,8 +310,8 @@ img {
   margin-bottom: 60px;
 }
 
-.section-title h2{
-  font-family: 'Annie Use Your Telescope', cursive;
+.section-title h2 {
+  font-family: "Annie Use Your Telescope", cursive;
   display: inline-block;
   font-size: 36px;
   font-weight: 700;
@@ -291,8 +321,8 @@ img {
   line-height: 1.75rem;
 }
 
-.section-title h2:before{
-  font-family: 'Give You Glory', cursive;
+.section-title h2:before {
+  font-family: "Give You Glory", cursive;
   content: attr(data-heading);
   display: block;
   font-size: 16px;
@@ -301,20 +331,20 @@ img {
 }
 
 @keyframes fadeInTop {
-  0%{
+  0% {
     opacity: 0;
     transform: translateY(-25px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
 
-.section.hide{
-  display:none;
+.section.hide {
+  display: none;
 }
 
-.d-none{
-  display:none;
+.d-none {
+  display: none;
 }
