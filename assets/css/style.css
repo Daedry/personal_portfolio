@@ -4,6 +4,12 @@
 /* global style */
 @import url("./global/global_style.css");
 
+/* colors */
+@import url("./global/colors.css");
+
+/* preloader */
+@import url("./global/preloader.css");
+
 /* header_section */
 @import url("./components/header_section.css");
 
@@ -33,3 +39,6 @@
 
 /* switcher color */
 @import url("./components/switcher_color.css");
+
+/* responsive */
+@import url("./global/responsive.css");
