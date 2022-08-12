@@ -383,9 +383,9 @@ const dayNigth = document.querySelector(".day-night");
 
 dayNigth.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-  if(document.body.classList.contains("dark")){
+  if (document.body.classList.contains("dark")) {
     localStorage.setItem("theme", "dark");
-  }else {
+  } else {
     localStorage.setItem("theme", "light");
   }
   updateIcon();
@@ -393,8 +393,8 @@ dayNigth.addEventListener("click", () => {
 
 function themeMode() {
   // checking if theme key exists
-  if(localStorage.getItem("theme") !== null){
-    if(localStorage.getItem("theme") === "light"){
+  if (localStorage.getItem("theme") !== null) {
+    if (localStorage.getItem("theme") === "light") {
       document.body.classList.remove("dark");
     } else {
       document.body.classList.add("dark");
@@ -415,14 +415,31 @@ function updateIcon() {
   }
 }
 
-
 /*----------------------- preloader -----------------------*/
 
 window.addEventListener("load", () => {
-  // preloader 
+  // preloader
   document.querySelector(".preloader").classList.add("fade-out");
   setTimeout(() => {
     document.querySelector(".preloader").style.display = "none";
   });
-
 });
+
+/*----------------------- clear form -----------------------*/
+let btnClear = document.querySelector(".btnClear");
+let inputs = document.querySelectorAll(".input-control");
+console.log(inputs);
+
+btnClear.addEventListener("click", () => {
+  setTimeout(() => {
+    inputs.forEach((input) => {
+      input.value = "";
+    });
+  }, 400);
+});
+
+
+(() => {
+  const form = document.forms["contact_form"]["Name"].value;
+  console.log(form);
+})();
