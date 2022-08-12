@@ -435,7 +435,7 @@ btnClear.addEventListener("click", () => {
     inputs.forEach((input) => {
       input.value = "";
     });
-  }, 400);
+  }, 300);
 });
 
 
