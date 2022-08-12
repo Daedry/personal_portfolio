@@ -29,10 +29,10 @@ Contact Section
 .contact-section .contact-item-inner span {
   display: block;
   font-size: 16px;
-  font-weight: 600;
   color: var(--text-black-700);
   margin: 15px 0 10px;
   text-transform: capitalize;
+  font-family: 'Mali', cursive;
 }
 
 .contact-section .contact-item-inner p {

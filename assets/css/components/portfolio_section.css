@@ -21,13 +21,12 @@ portfolio section
 }
 
 .portfolio-section .filter-item {
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
   display: inline-block;
   margin: 0 5px 10px;
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 30px;
   cursor: pointer;
-  font-weight: 500;
   color: var(--text-black-600);
   text-transform: capitalize;
   font-size: 20px;
@@ -107,4 +106,5 @@ portfolio section
   margin: 10px 0 0;
   color: var(--text-black-600);
   text-transform: capitalize;
+  font-family: 'Mali', cursive;
 }

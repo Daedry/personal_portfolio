@@ -21,6 +21,12 @@ GLOBAL STYLE
 
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;1,300;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500;600&display=swap');
+
 :root {
   --skin-color: #fb839e;
   --bg-opacity: rgba(255, 255, 255, 0.5);
@@ -145,7 +151,6 @@ img {
 .btn-1 {
   padding: 10px 25px;
   font-size: 22px;
-  font-weight: 500;
   color: var(--skin-color);
   background-color: transparent;
   line-height: 1.5;
@@ -349,4 +354,8 @@ img {
 
 .d-none {
   display: none;
+}
+
+.mali{
+  font-family: 'Mali', cursive;
 }

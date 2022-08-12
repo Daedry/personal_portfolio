@@ -80,6 +80,7 @@ portfolio popup
   text-transform: capitalize;
   font-weight: 600;
   margin: 0 0 5px;
+  font-family: 'Mali', cursive;
 }
 
 .portfolio-popup .pp-title p {
@@ -102,6 +103,7 @@ portfolio popup
   color: var(--text-black-700);
   margin: 0 0 15px;
   text-transform: capitalize;
+  font-family: 'Mali', cursive;
 }
 
 .portfolio-popup .description {
