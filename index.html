@@ -34,7 +34,7 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="logo">
-                    <a href="link-item index.html">W</a>
+                    <a href="index.html">RM</a>
                 </div>
                 <div class="hamburger-btn outer-shadow hover-in-shadow">
                     <span></span>
@@ -126,7 +126,7 @@
                 </div>
                 <div class="home-img">
                     <div class="img-box inner-shadow">
-                        <img src="./assets/img/profile-3.jpg" class="outer-shadow" alt="profile-pic">
+                        <img src="./assets/img/profile/pic-q.gif" class="outer-shadow" alt="profile-pic">
                     </div>
                 </div>
             </div>
@@ -145,12 +145,14 @@
             <div class="row">
                 <div class="about-img inner-shadow">
                     <div class="img-box">
-                        <img src="./assets/img/profile-3.jpg" class="outer-shadow" alt="profile-pic">
+                        <img src="./assets/img/profile/pic-q.gif" class="outer-shadow" alt="profile-pic">
                     </div>
                     <!-- social links start -->
                     <div class="social-links">
-                        <a href="#" class="outer-shadow hover-in-shadow"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#" class="outer-shadow hover-in-shadow"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/roma-margine-348bb2241/"
+                            class="outer-shadow hover-in-shadow"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Daedry" class="outer-shadow hover-in-shadow"><i
+                                class="fa-brands fa-github"></i></a>
                     </div>
                     <!-- social links end -->
                 </div>
@@ -818,33 +820,35 @@
             </div>
             <div class="row">
                 <div class="contact-form">
-                    <form action="">
-                        <div class="row">
-                            <div class="w-50">
-                                <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" placeholder="Name" class="input-control">
-                                </div>
-                                <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" placeholder="Email" class="input-control">
-                                </div>
-                                <div class="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" placeholder="Subject" class="input-control">
-                                </div>
+                    <form action="https://formspree.io/f/xyyvyjgy" method="POST" />
+                    <div class="row">
+                        <div class="w-50">
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <input type="text" name="Name" placeholder="Name" class="input-control" required>
                             </div>
-                            <div class="w-50">
-                                <div class="input-group outer-shadow hover-in-shadow">
-                                    <textarea class="input-control" placeholder="Message"></textarea>
-                                </div>
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <input type="email" name="Email" placeholder="Email" class="input-control" required>
+                            </div>
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <input type="text" name="Subject" placeholder="Subject" class="input-control" required>
                             </div>
                         </div>
+                        <div class="w-50">
+                            <div class="input-group outer-shadow hover-in-shadow">
+                                <textarea name="Message" class="input-control" placeholder="Message"
+                                    required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="submit-btn">
+                            <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+                        </div>
+                    </div>
                     </form>
                 </div>
             </div>
-            <div class="row">
-                <div class="submit-btn">
-                    <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
-                </div>
-            </div>
+
         </div>
     </section>
     <!-- contact section end -->
